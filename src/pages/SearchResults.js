@@ -10,7 +10,7 @@ const SearchResults = () => {
   useEffect(() => {
     const fetchResults = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/search`, {
+        const res = await axios.get(`https://journal-mern-oefu.onrender.com/api/search`, {
           params: {
             type: searchType,
             query: searchQuery,

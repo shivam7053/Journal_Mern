@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/news/');
+        const res = await axios.get('https://journal-mern-oefu.onrender.com/api/news/');
         setNews(res.data);
       } catch (err) {
         console.error('Error fetching news:', err);
@@ -19,7 +19,7 @@ const Home = () => {
 
     const fetchJournals = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/journal/journal');
+        const res = await axios.get('https://journal-mern-oefu.onrender.com/api/journal/journal');
         setJournals(res.data);
       } catch (err) {
         console.error('Error fetching journals:', err);

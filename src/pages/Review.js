@@ -9,7 +9,7 @@ const Review = () => {
     const fetchManuscripts = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:5000/api/journal/manuscripts', {
+        const res = await axios.get('https://journal-mern-oefu.onrender.com/api/journal/manuscripts', {
           headers: { 'x-auth-token': token }
         });
         setManuscripts(res.data);

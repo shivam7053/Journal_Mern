@@ -30,7 +30,7 @@ const SubmitManuscript = () => {
       formData.append('file', file);
 
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5000/api/journal/manuscripts', formData, {
+      await axios.post('https://journal-mern-oefu.onrender.com/api/journal/manuscripts', formData, {
         headers: { 'x-auth-token': token, 'Content-Type': 'multipart/form-data' }
       });
 

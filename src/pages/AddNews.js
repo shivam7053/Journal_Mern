@@ -11,7 +11,7 @@ const AddNews = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/news', 
+      await axios.post('https://journal-mern-oefu.onrender.com/api/news', 
         { title, content },
         { headers: { 'x-auth-token': token } }  // Use x-auth-token header
       );
