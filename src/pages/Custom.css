@@ -1,0 +1,8 @@
+/* Home.css */
+.BG-photo {
+    background-image: url("./BG-photo/home.jpg"); /* Replace with your actual image URL */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
